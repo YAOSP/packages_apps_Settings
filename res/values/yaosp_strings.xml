@@ -39,6 +39,9 @@
     <string name="lcd_density_unsupported">Unsupported</string>
     <string name="lcd_density_restarting_ui">Restarting UI\u2026</string>
 
+    <!-- Font size sample text -->
+    <string name="font_size_sample">Font Size</string>
+
     <!-- Rotation Modes  -->
     <string name="display_rotation_title">Rotation</string>
     <string name="display_rotation_disabled">Disabled</string>
