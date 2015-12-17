@@ -17,7 +17,7 @@
 
     <!-- About phone screen, YAOSP build info -->
     <string name="yasop_version_title">Yank555.lu AOSP version</string>
-    <string name="yasop_version_default">YAOSP-M v0.0 by Jean-Pierre Rasquin (yank555.lu@gmail.com)</string>
+    <string name="yasop_version_default">YAOSP-M v0.1 by Jean-Pierre Rasquin (yank555.lu@gmail.com)</string>
 
     <!-- SuperSU header name - the app hides itself from launcher based on this resource name being present in com.android.settings -->
     <string name="supersu_title">SuperSU</string>
