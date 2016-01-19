@@ -32,4 +32,11 @@
     <!-- Hostname setting -->
     <string name="device_hostname">Device hostname</string>
 
+    <!-- Setting options for LCD density -->
+    <string name="lcd_density">LCD density</string>
+    <string name="lcd_density_summary">%d DPI</string>
+    <string name="lcd_density_default">default</string>
+    <string name="lcd_density_unsupported">Unsupported</string>
+    <string name="lcd_density_restarting_ui">Restarting UI\u2026</string>
+
 </resources>
