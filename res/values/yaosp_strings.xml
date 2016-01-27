@@ -459,4 +459,8 @@
     <string name="nav_button_color_mode_summary">Change the navigation bar button color mode</string>
     <string name="navigation_bar_glow_tint_title">Button glow color</string>
 
+    <!--Quick unlock -->
+    <string name="unlock_quick_unlock_control_title">Quick unlock</string>
+    <string name="unlock_quick_unlock_control_summary">Automatically unlock as soon as the correct PIN/password has been entered (pressing OK not required)\nNote: will only work for 4 digit PIN/Password !</string>
+
 </resources>
