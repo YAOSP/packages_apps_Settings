@@ -511,5 +511,8 @@
     <string name="doze_schedule_summary_off">Einmaliges Einschalten des Displays je Benachrichtigung</string>
     <string name="doze_brightness_title">Ambient-Display-Helligkeit</string>
     <string name="doze_brightness_summary">Helligkeit des Ambient-Display (% der maximal erlaubten Helligkeit)</string>
+    <string name="doze_wakeup_doubletap_title">Doppeltes Antippen zum einschalten</string>
+    <string name="doze_wakeup_doubletap_summary_on">Benötigt ein doppeltes antippen im Ambient-Display um das Gerät einzuschalten</string>
+    <string name="doze_wakeup_doubletap_summary_off">Benötigt ein einfaches antippen im Ambient-Display um das Gerät einzuschalten (Standard)</string>
 
 </resources>
