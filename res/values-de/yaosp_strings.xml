@@ -103,6 +103,7 @@
     <string name="clock_color_title">Farbe</string>
     <string name="status_bar_clock_style_reset">Farbe zurücksetzen</string>
     <string name="status_bar_show_clock_title">Uhrzeit und Datum anzeigen</string>
+    <string name="status_bar_show_seconds_title">Sekunden anzeigen</string>
     <string name="status_bar_am_pm_title">AM/PM</string>
     <string name="status_bar_am_pm_info">24-Stunden-Anzeige ist aktiviert</string>
     <string name="enable_clock_weekday">Wochentag</string>
