@@ -519,4 +519,8 @@
     <string name="doze_wakeup_doubletap_summary_on">Nécessite d\'appuyer deux fois pour activer l\'appareil en mode veille (doze)</string>
     <string name="doze_wakeup_doubletap_summary_off">Nécessite d\'appuyer une seule fois pour activer l\'appareil en mode veille (doze) (default)</string>
 
+    <!-- Skip tracks on longpress volume buttons -->
+    <string name="volbtn_music_controls_title">Control musique par boutons de volume</string>
+    <string name="volbtn_music_controls_summary">Lorsque l\'écran est coupé, l\'appui long sur les boutons de volume permet de changer la plage musicale</string>
+
 </resources>
