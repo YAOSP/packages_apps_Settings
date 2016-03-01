@@ -225,7 +225,7 @@
     <string name="shortcut_action_select_action_longpress">Aktion bei langem Drücken:</string>
     <string name="shortcut_action_select_action">Aktion auswählen:</string>
     <string name="shortcut_action_select_action_newaction">Neue Aktion auswählen:</string>
-    <string name="shortcut_action_reset">Zurücksetzten</string>
+    <string name="shortcut_action_reset">Zurücksetzen</string>
     <string name="shortcut_action_add">Hinzufügen</string>
     <string name="shortcut_action_reset_message">Standardeinstellungen wiederherstellen ?</string>
     <string name="shortcut_action_max">Maximale Eintraglänge erreicht</string>
