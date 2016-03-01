@@ -17,7 +17,7 @@
 
     <!-- About phone screen, YAOSP build info -->
     <string name="yasop_version_title">YAOSP-MM version</string>
-    <string name="yasop_version_default">6.0.1_r13 v0.97a 2016-02-28 by Jean-Pierre Rasquin (yank555.lu@gmail.com)</string>
+    <string name="yasop_version_default">6.0.1_r13 v0.97b 2016-03-01 by Jean-Pierre Rasquin (yank555.lu@gmail.com)</string>
 
     <!-- General strings -->
     <string name="ok">OK</string>
