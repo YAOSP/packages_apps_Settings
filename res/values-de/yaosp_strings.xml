@@ -520,4 +520,7 @@
     <string name="volbtn_music_controls_title">Musiksteuerung per Lautstärke-Tasten</string>
     <string name="volbtn_music_controls_summary">Bei abgeschaltetem Bildschirm, durch langes Drücken der Lautstärke-Tasten Musiktitel wechseln</string>
 
+    <!-- Charging vibration -->
+    <string name="charging_vibration_title">Ladevibration</string>
+
 </resources>
