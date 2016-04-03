@@ -525,6 +525,10 @@
     <string name="volbtn_music_controls_title">Control musique par boutons de volume</string>
     <string name="volbtn_music_controls_summary">Lorsque l\'écran est coupé, l\'appui long sur les boutons de volume permet de changer la plage musicale</string>
 
+    <!-- Proximity wake -->
+    <string name="proximity_wake_title">Prevention contre le réveil accidentel</string>
+    <string name="proximity_wake_summary">Vérifier le détecteur de proximité avant de réveiller le téléphone</string>
+
     <!-- Charging vibration -->
     <string name="charging_vibration_title">Vibration relative à la charge</string>
 
