@@ -106,6 +106,7 @@
     <string name="clock_color_title">Couleur</string>
     <string name="status_bar_clock_style_reset">Réinitialiser la couleur</string>
     <string name="status_bar_show_clock_title">Afficher l\'heure et la date</string>
+    <string name="status_bar_show_seconds_title">Afficher les secondes</string>
     <string name="status_bar_clock_color_override">Utiliser une couleur personalisée</string>
     <string name="status_bar_am_pm_title">Mode AM/PM</string>
     <string name="status_bar_am_pm_info">L\'horloge au format 24 heures est activée</string>
