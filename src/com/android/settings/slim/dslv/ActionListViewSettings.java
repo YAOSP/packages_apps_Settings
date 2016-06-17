@@ -101,7 +101,7 @@ public class ActionListViewSettings extends ListFragment implements
     private static final int POWER_MENU_SHORTCUT   = 5;
     private static final int SHAKE_EVENTS_DISABLED = 6;
 
-    private static final int DEFAULT_MAX_ACTION_NUMBER = 5;
+    private static final int DEFAULT_MAX_ACTION_NUMBER = 7;
 
     public static final int REQUEST_PICK_CUSTOM_ICON = 1000;
 
