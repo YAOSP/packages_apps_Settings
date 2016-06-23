@@ -109,6 +109,13 @@
                 android:persistent="false"
                 android:ringtoneType="notification" />
 
+        <!-- Volume Steps -->
+        <PreferenceScreen
+                android:fragment="com.android.settings.nexus.VolumeStepsSettings"
+                android:key="vol_steps"
+                android:title="@string/volume_steps_title"
+                android:summary="@string/volume_steps_summary" />
+
         <!-- Other sounds -->
         <Preference
                 android:key="other_sounds"
