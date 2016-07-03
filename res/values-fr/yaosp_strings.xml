@@ -522,7 +522,7 @@
     <string name="doze_wakeup_doubletap_summary_off">Nécessite d\'appuyer une seule fois pour activer l\'appareil en mode veille (doze) (default)</string>
 
     <!-- Skip tracks on longpress volume buttons -->
-    <string name="volbtn_music_controls_title">Control musique par boutons de volume</string>
+    <string name="volbtn_music_controls_title">Contrôle musique par boutons de volume</string>
     <string name="volbtn_music_controls_summary">Lorsque l\'écran est coupé, l\'appui long sur les boutons de volume permet de changer la plage musicale</string>
 
     <!-- Proximity wake -->
@@ -543,5 +543,14 @@
     <string name="volume_steps_system_title">Niveaux de volume: Système</string>
     <string name="volume_steps_voice_call_title">Volume steps: Appel</string>
     <string name="volume_steps_reset">Réinitialiser</string>
+
+   <!-- Lockscreen Wallpaper -->
+   <string name="lockscreen_wallpaper_set_title">Fond d\'écran pour l\'écran de vérouillage - Définir</string>
+   <string name="lockscreen_wallpaper_clear_title">Fond d\'écran pour l\'écran de vérouillage - Réinitialiser</string>
+   <string name="reset_lockscreen_wallpaper">Fond d\'écran pour l\'écran de vérouillage réinitialisé</string>
+
+   <!-- Volume rocker wake -->
+   <string name="volbtn_wake_device_title">Réveil par boutons de volume</string>
+   <string name="volbtn_wake_device_summary">Appuyer sur un des deux boutons de volume réveillera le téléphone\nPourrait ne pas fonctionner si le contrôle musique par boutons de volume est actif pendant que de la musique est reproduite</string>
 
 </resources>
