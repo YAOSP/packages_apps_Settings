@@ -545,4 +545,9 @@
     <string name="volume_steps_voice_call_title">Volume steps: Voice Call</string>
     <string name="volume_steps_reset">Reset</string>
 
+   <!-- Lockscreen Wallpaper -->
+   <string name="lockscreen_wallpaper_set_title">Lockscreen wallpaper - Set</string>
+   <string name="lockscreen_wallpaper_clear_title">Lockscreen wallpaper - Reset</string>
+   <string name="reset_lockscreen_wallpaper">Lockscreen wallpaper reset</string>
+
 </resources>

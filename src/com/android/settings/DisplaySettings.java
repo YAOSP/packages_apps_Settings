@@ -38,16 +38,19 @@ import android.app.Dialog;
 import android.app.UiModeManager;
 import android.app.IActivityManager;
 import android.app.ProgressDialog;
+import android.app.WallpaperManager;
 import android.app.admin.DevicePolicyManager;
 import android.content.ContentResolver;
 import android.content.Context;
+import android.content.Intent;
 import android.content.res.Configuration;
 import android.content.res.Resources;
+import android.database.ContentObserver;
 import android.hardware.Sensor;
 import android.hardware.SensorManager;
+import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Build;
-import android.database.ContentObserver;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.RemoteException;
@@ -64,6 +67,7 @@ import android.provider.Settings;
 import android.text.TextUtils;
 import android.util.DisplayMetrics;
 import android.util.Log;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -100,6 +104,13 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private static final String ROTATION_ANGLE_270 = "270";
 
     private static final int DLG_GLOBAL_CHANGE_WARNING = 1;
+
+    public static final int IMAGE_PICK = 1;
+    private static final String KEY_WALLPAPER_SET = "lockscreen_wallpaper_set";
+    private static final String KEY_WALLPAPER_CLEAR = "lockscreen_wallpaper_clear";
+
+    private Preference mSetWallpaper;
+    private Preference mClearWallpaper;
 
     private ListPreference mLcdDensityPreference;
 
@@ -282,6 +293,9 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
             mWakeUpOptions.removePreference(findPreference(KEY_PROXIMITY_WAKE));
             Settings.System.putInt(resolver, Settings.System.PROXIMITY_ON_WAKE, 0);
         }
+
+        mSetWallpaper = (Preference) findPreference(KEY_WALLPAPER_SET);
+        mClearWallpaper = (Preference) findPreference(KEY_WALLPAPER_CLEAR);
 
     }
 
@@ -625,7 +639,46 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
 
     @Override
     public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
+
+        if (preference == mSetWallpaper) {
+            setKeyguardWallpaper();
+            return true;
+        } else if (preference == mClearWallpaper) {
+            clearKeyguardWallpaper();
+            Toast.makeText(getView().getContext(), getString(R.string.reset_lockscreen_wallpaper),
+            Toast.LENGTH_LONG).show();
+            return true;
+        }
+
         return super.onPreferenceTreeClick(preferenceScreen, preference);
+    }
+
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if (requestCode == IMAGE_PICK && resultCode == Activity.RESULT_OK) {
+            if (data != null && data.getData() != null) {
+                Uri uri = data.getData();
+                Intent intent = new Intent();
+                intent.setClassName("com.android.wallpapercropper",
+                        "com.android.wallpapercropper.WallpaperCropActivity");
+                intent.putExtra("keyguardMode", "1");
+                intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
+                intent.setData(uri);
+                startActivity(intent);
+            }
+        }
+    }
+
+    private void setKeyguardWallpaper() {
+        Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
+        intent.setType("image/*");
+        startActivityForResult(intent, IMAGE_PICK);
+    }
+
+    private void clearKeyguardWallpaper() {
+        WallpaperManager wallpaperManager = null;
+        wallpaperManager = WallpaperManager.getInstance(getActivity());
+        wallpaperManager.clearKeyguardWallpaper();
     }
 
     @Override
