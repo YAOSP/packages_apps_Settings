@@ -540,4 +540,13 @@
     <string name="volume_steps_voice_call_title">Lautstärke Stufen: Anruf</string>
     <string name="volume_steps_reset">Zurücksetzen</string>
 
+   <!-- Lockscreen Wallpaper -->
+   <string name="lockscreen_wallpaper_set_title">Sperrbildschirm Hintergrund - Setzen</string>
+   <string name="lockscreen_wallpaper_clear_title">Sperrbildschirm Hintergrund - Zurücksetzen</string>
+   <string name="reset_lockscreen_wallpaper">Sperrbildschirm Hintergrund zurückgesetzt</string>
+
+   <!-- Volume rocker wake -->
+   <string name="volbtn_wake_device_title">Aufwecken per Lautstärke-Tasten</string>
+   <string name="volbtn_wake_device_summary">Das Drücken einer der beiden Lautstärke-Tasten wird das Gerät aufwecken\nFunktioniert ggf. nicht wenn Musiksteuerung per Lautstärke-Tasten aktiv ist und es wird gerade Musik abgespielt</string>
+
 </resources>
