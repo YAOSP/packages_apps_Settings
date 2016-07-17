@@ -40,6 +40,7 @@ import android.nfc.NfcAdapter;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
+import android.os.SystemProperties;
 import android.os.UserHandle;
 import android.os.UserManager;
 import android.preference.Preference;
@@ -244,6 +245,11 @@ public class SettingsActivity extends Activity
      * <li>com.android.settings.category.system</li>
      */
     private static final String EXTRA_CATEGORY_KEY = "com.android.settings.category";
+
+    /**
+     * The key used to access current superuser state
+     */
+    private static final String ROOT_ACCESS_PROPERTY = "persist.sys.root_access";
 
     private static boolean sShowNoHomeNotice = false;
 
@@ -1309,6 +1315,21 @@ public class SettingsActivity extends Activity
                     } catch (PackageManager.NameNotFoundException e) {
                     }
                     if (!supported) {
+                        removeTile = true;
+                    }
+                } else if (id == R.id.superuser_settings) {
+                    // Remove superuser if root is not enabled or SuperSU is installed
+                    boolean superuserDisabled =
+                            (SystemProperties.getInt(ROOT_ACCESS_PROPERTY, 0) == 0);
+
+                    boolean supersuInstalled = false;
+                    try {
+                        supersuInstalled = (getPackageManager().getPackageInfo(
+                        "eu.chainfire.supersu", 0).versionCode >= 185);
+                    } catch (PackageManager.NameNotFoundException e) {
+                    }
+
+                    if (supersuInstalled || superuserDisabled) {
                         removeTile = true;
                     }
                 }
