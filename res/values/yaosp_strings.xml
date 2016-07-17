@@ -755,6 +755,9 @@
     <string name="show_su_statusbar_icon_title">SU statusbar icon</string>
     <string name="show_su_statusbar_icon_summary">Show a SU # icon in statusbar whenever a root session is active</string>
 
+    <!-- Show su settings -->
+    <string name="superuser_settings_title">Superuser</string>
+
     <!-- Memory -->
     <string name="memory_startup_apps_title">Apps started on boot</string>
 
