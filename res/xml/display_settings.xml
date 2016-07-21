@@ -49,6 +49,16 @@
                 settings:keywords="@string/keywords_display_wallpaper"
                 android:fragment="com.android.settings.WallpaperTypeSettings" />
 
+        <Preference
+                android:key="lockscreen_wallpaper_set"
+                android:title="@string/lockscreen_wallpaper_set_title"
+                android:persistent="false"/>
+
+        <Preference
+                android:key="lockscreen_wallpaper_clear"
+                android:title="@string/lockscreen_wallpaper_clear_title"
+                android:persistent="false"/>
+
         <PreferenceScreen
                 android:key="display_rotation"
                 android:title="@string/display_rotation_title"
