@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2015 Yank555.lu Android Open Source Project
+<!-- Copyright (C) 2013-2016 SlimRoms Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -13,15 +13,14 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-    <!-- Expanded desktop -->
-    <drawable name="expanded_item_bg_activated">#ffEEEEEE</drawable>
-    <drawable name="expanded_item_bg">@android:color/background_light</drawable>
-    <color name="expanded_button_color_normal">#4CAF50</color>
-    <color name="expanded_button_color_close">#F44336</color>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <!-- Privacy Settings -->
-    <color name="theme_accent">#ff009688</color>
+    <SwitchPreference
+        android:key="privacy_guard_default"
+        android:title="@string/privacy_guard_default_title"
+        android:summary="@string/privacy_guard_default_summary"
+        android:persistent="false" />
 
-</resources>
+</PreferenceScreen>
