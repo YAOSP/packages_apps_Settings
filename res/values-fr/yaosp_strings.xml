@@ -760,4 +760,17 @@
     <!-- Memory -->
     <string name="memory_startup_apps_title">Apps lancées au démarrage</string>
 
+    <!-- Dashboard settings -->
+    <string name="dashboard_category">Paramètre des réglages</string>
+    <string name="dashboard_columns_title">Colonnes</string>
+    <string name="dashboard_columns_summary">Changer le nombre de colones à afficher dans les réglages</string>
+    <string name="dashboard_columns_dialog_title">Sélectionner le nombre de colones</string>
+    <string name="dashboard_columns_one">Une</string>
+    <string name="dashboard_columns_two">Deux</string>
+    <string name="dashboard_columns_three">Trois</string>
+    <string name="dashboard_tileview_double_lines_title">Titre des tuiles</string>
+    <string name="dashboard_tileview_double_lines_summary">Afficher le titres des tuiles de réglage sur 2 lignes</string>
+    <string name="dashboard_tileview_dividers_title">Séparateurs</string>
+    <string name="dashboard_tileview_dividers_summary">Masquer les séparateur des tuiles</string>
+
 </resources>
