@@ -756,4 +756,17 @@
     <!-- Memory -->
     <string name="memory_startup_apps_title">Apps starten beim Hochfahren</string>
 
+    <!-- Dashboard settings -->
+    <string name="dashboard_category">Einstellungen</string>
+    <string name="dashboard_columns_title">Spalten</string>
+    <string name="dashboard_columns_summary">Anzahl an Spalten der Einstellungen ändern</string>
+    <string name="dashboard_columns_dialog_title">Anzahl an Spalten auswählen</string>
+    <string name="dashboard_columns_one">Eins</string>
+    <string name="dashboard_columns_two">Zwei</string>
+    <string name="dashboard_columns_three">Drei</string>
+    <string name="dashboard_tileview_double_lines_title">Überschrift Einstellungskacheln</string>
+    <string name="dashboard_tileview_double_lines_summary">Überschrift der Einstellungskacheln auf 2 Zeilen anzeigen</string>
+    <string name="dashboard_tileview_dividers_title">Trenner</string>
+    <string name="dashboard_tileview_dividers_summary">Kacheltrenner ausblenden</string>
+
 </resources>
