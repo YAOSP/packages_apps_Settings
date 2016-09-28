@@ -17,7 +17,7 @@
 
     <!-- About phone screen, YAOSP build info -->
     <string name="yasop_version_title">YAOSP-MM version</string>
-    <string name="yasop_version_default">6.0.1_r62 - MTC20F - v1.43 2016-09-06\nby Jean-Pierre Rasquin (yank555.lu@gmail.com)</string>
+    <string name="yasop_version_default">6.0.1_r62 - MTC20F - v1.44 2016-09-28\nby Jean-Pierre Rasquin (yank555.lu@gmail.com)</string>
 
     <!-- General strings -->
     <string name="ok">OK</string>
